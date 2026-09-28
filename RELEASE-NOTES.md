@@ -1,6 +1,6 @@
 # Relay 1.0.0 — prévia de 28/09/2026
 
-Build **`09bf98c9fa03`** · macOS Apple Silicon · [Instalação](INSTALL.md)
+Build **`09bf98c9fa03`** · macOS Apple Silicon · [Instalação](https://github.com/ArthurMalucelli/relay/blob/main/INSTALL.md)
 
 ## Incluído
 
