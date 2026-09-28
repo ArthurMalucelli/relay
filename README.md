@@ -2,7 +2,7 @@
 
 **Codex e Claude Code em um app para Mac.** Converse, trabalhe com arquivos e troque de agente mantendo o histórico público da conversa.
 
-**[Baixar para Mac com Apple Silicon](https://github.com/ArthurMalucelli/relay/releases/download/v1.0.0-preview.20260928/Relay-1.0.0-09bf98c9fa03-arm64.dmg)** · [Guia de instalação](INSTALL.md) · [Versões](https://github.com/ArthurMalucelli/relay/releases) · [Reportar problema](https://github.com/ArthurMalucelli/relay/issues/new)
+**[Baixar Relay.zip para Mac](https://github.com/ArthurMalucelli/relay/releases/download/v1.0.0-preview.20260928/Relay-1.0.0-09bf98c9fa03-arm64.zip)** · [Guia de instalação](INSTALL.md) · [Baixar pelo Terminal](INSTALL.md#baixar-pelo-terminal-opcional) · [Versões](https://github.com/ArthurMalucelli/relay/releases) · [Reportar problema](https://github.com/ArthurMalucelli/relay/issues/new)
 
 ## Antes de instalar
 
@@ -11,19 +11,21 @@
 | Mac com Apple Silicon | Chip Apple M1 ou posterior. Intel, Windows e Linux não têm instalador nesta versão. |
 | macOS 13 ou posterior | Mínimo declarado pelo aplicativo; não há teste em todas essas versões. |
 | Internet e sua própria conta | Conta com acesso ao Codex pelo ChatGPT e/ou ao Claude Code pela assinatura Claude. |
-| Download de aproximadamente 401 MB | Os componentes necessários à conversa já estão no instalador. |
+| Aplicativo pronto em ZIP · aproximadamente 348 MB | Os componentes necessários à conversa já estão incluídos. DMG também disponível em Releases. |
 
 Não é necessário instalar Node, Homebrew ou CLIs, abrir Terminal, clonar código ou configurar JSON para conversar. A disponibilidade de modelos e o consumo seguem as regras e limites da sua conta em cada provedor. O Relay não inclui uma assinatura, não oferece uso ilimitado e não tem alternativa de inferência por chave de API.
 
 ## Instalar e começar
 
-1. **[Baixe o arquivo `.dmg`](https://github.com/ArthurMalucelli/relay/releases/download/v1.0.0-preview.20260928/Relay-1.0.0-09bf98c9fa03-arm64.dmg)**. Não baixe os arquivos “Source code”: eles contêm apenas esta documentação.
-2. Abra o download e arraste **Relay** para **Applications / Aplicativos**.
+1. **[Baixe o arquivo `.zip`](https://github.com/ArthurMalucelli/relay/releases/download/v1.0.0-preview.20260928/Relay-1.0.0-09bf98c9fa03-arm64.zip)** e dê dois cliques para descompactar. Não escolha “Source code”: esse ZIP contém apenas a documentação do repositório.
+2. Mova **Relay.app** para **Aplicativos** no Finder.
 3. Abra **Aplicativos → Relay**. Se o macOS impedir, consulte [Aviso de segurança do macOS](INSTALL.md#aviso-de-segurança-do-macos).
 4. No Relay, abra **Contas** e escolha **Entrar com ChatGPT** ou **Entrar com Claude**. Complete você mesmo o login na página oficial aberta no navegador e volte ao app. É possível começar com um agente só; veja a ressalva Claude abaixo.
 5. Escolha o agente e o modelo no compositor. Para testar, envie: **“Responda apenas: Relay funcionando.”**
 
 Cada pessoa entra com as próprias contas. O instalador não leva o perfil, as credenciais ou as conversas do desenvolvedor.
+
+Prefere Terminal? Use o [comando de download](INSTALL.md#baixar-pelo-terminal-opcional). **`git clone` não instala o Relay:** este repositório hospeda a documentação; o aplicativo pronto está nos arquivos da versão.
 
 ## O que você pode testar
 
@@ -63,11 +65,11 @@ Trocar de agente compartilha com o destino o contexto público necessário à co
 |---|---|
 | Versão | 1.0.0 — prévia de 28/09/2026 |
 | Build do aplicativo | `09bf98c9fa03` |
-| Arquivo | `Relay-1.0.0-09bf98c9fa03-arm64.dmg` |
-| Tamanho exato | 400.815.369 bytes |
-| SHA-256 | `e95d7d7a8262a6ecbcf11e7cd379c1a0f69a55390aaf2bb98995cc9903263a90` |
+| Arquivo principal | `Relay-1.0.0-09bf98c9fa03-arm64.zip` |
+| Tamanho exato do ZIP | 348.105.110 bytes |
+| SHA-256 do ZIP | `4e21c641573e619828277c6f17d695813171c690ad29b60b4004ecff4de10009` |
 
-O arquivo publicado corresponde ao candidato instalado e testado localmente. A rodada final registrou **612 testes automatizados** e **22 verificações de instalação em perfil vazio no mesmo Mac**. Houve também aceitação real com os dois agentes, skills, plugins e MCP local, incluindo aprovações e reinício. Isso não substitui o teste em outro Mac. [Notas da versão](RELEASE-NOTES.md) · [Manifesto do download](release-manifest.json) · [Checksum](SHA256SUMS.txt).
+ZIP e DMG contêm o mesmo aplicativo. A extração do ZIP preservou os **6.361 arquivos, 14 links simbólicos, permissões e integridade de assinatura** do app no DMG. A rodada final do aplicativo registrou **612 testes automatizados** e **22 verificações de instalação pelo DMG em perfil vazio no mesmo Mac**. Houve também aceitação real com os dois agentes, skills, plugins e MCP local, incluindo aprovações e reinício. Isso não substitui o teste em outro Mac. [Notas da versão](RELEASE-NOTES.md) · [Manifesto dos downloads](release-manifest.json) · [Checksums do ZIP e DMG](SHA256SUMS.txt).
 
 ## Encontrou um problema?
 

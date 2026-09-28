@@ -5,6 +5,10 @@
   "commit": "09bf98c9fa03",
   "dirty": false,
   "builtAt": "2026-09-28T18:43:24.083Z",
+  "primaryDownload": "Relay-1.0.0-09bf98c9fa03-arm64.zip",
+  "zip": "Relay-1.0.0-09bf98c9fa03-arm64.zip",
+  "zipSha256": "4e21c641573e619828277c6f17d695813171c690ad29b60b4004ecff4de10009",
+  "zipBytes": 348105110,
   "dmg": "Relay-1.0.0-09bf98c9fa03-arm64.dmg",
   "dmgSha256": "e95d7d7a8262a6ecbcf11e7cd379c1a0f69a55390aaf2bb98995cc9903263a90",
   "dmgBytes": 400815369,
@@ -15,7 +19,8 @@
   "distributable": false,
   "integrity": {
     "bundle": true,
-    "appInDmg": true
+    "appInDmg": true,
+    "appExtractedFromZip": true
   },
   "gatekeeperOnBuildMac": {
     "bundle": "rejected",
@@ -25,6 +30,9 @@
   "validation": {
     "automatedTests": 612,
     "cleanProfileChecksOnBuildMac": 22,
+    "zipMatchesAppInDmg": true,
+    "zipComparedFiles": 6361,
+    "zipComparedSymlinks": 14,
     "independentMacAndAccount": false,
     "externalMcpOAuth": false
   },

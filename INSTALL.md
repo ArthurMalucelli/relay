@@ -8,18 +8,35 @@ Abra **menu Apple → Sobre Este Mac**. Em **Chip**, deve aparecer um chip Apple
 
 Use sua própria conta com acesso ao Codex/Claude Code pelo respectivo provedor. Você pode conectar apenas um agente. O suporte à assinatura Claude está em teste e tem a condição de distribuição descrita na [página principal](README.md#limites-desta-versão).
 
-## 2. Baixe o instalador
+## 2. Baixe o aplicativo
 
-**[Baixar Relay para Apple Silicon](https://github.com/ArthurMalucelli/relay/releases/download/v1.0.0-preview.20260928/Relay-1.0.0-09bf98c9fa03-arm64.dmg)**
+**[Baixar Relay.zip para Apple Silicon](https://github.com/ArthurMalucelli/relay/releases/download/v1.0.0-preview.20260928/Relay-1.0.0-09bf98c9fa03-arm64.zip)**
 
-Se abrir a página da versão, expanda **Assets** e escolha o arquivo que termina em **`arm64.dmg`**. “Source code (zip)” e “Source code (tar.gz)” não instalam o aplicativo.
+Se abrir a página da versão, expanda **Assets** e escolha **`Relay-1.0.0-09bf98c9fa03-arm64.zip`**. “Source code (zip)” e “Source code (tar.gz)” contêm apenas esta documentação; não são o aplicativo.
 
 ## 3. Instale
 
-1. Abra o `.dmg` na pasta **Downloads**.
-2. Arraste **Relay.app** para o atalho **Applications / Aplicativos** que aparece ao lado.
+1. Dê dois cliques no `.zip` na pasta **Downloads** para descompactar.
+2. Mova o **Relay.app** extraído para **Aplicativos** no Finder.
 3. Abra o Finder, vá a **Aplicativos** e abra **Relay**.
-4. Depois de instalar, você pode ejetar a imagem “Relay 1.0.0” no Finder.
+
+### Baixar pelo Terminal (opcional)
+
+Este comando baixa o mesmo ZIP e abre o descompactador do macOS quando o download terminar. Não clona código, não compila e não instala dependências.
+
+```sh
+curl --fail --location 'https://github.com/ArthurMalucelli/relay/releases/download/v1.0.0-preview.20260928/Relay-1.0.0-09bf98c9fa03-arm64.zip' \
+  --output "$HOME/Downloads/Relay-1.0.0-09bf98c9fa03-arm64.zip" &&
+open "$HOME/Downloads/Relay-1.0.0-09bf98c9fa03-arm64.zip"
+```
+
+Depois, mova **Downloads → Relay.app** para **Aplicativos** e abra. Se o navegador já tiver descompactado o ZIP, use o app extraído diretamente.
+
+**Sobre `git clone`:** clonar este repositório baixa a documentação, não o aplicativo. Não há etapa de `npm install` ou compilação para usar o Relay.
+
+### Alternativa: DMG
+
+O **[DMG](https://github.com/ArthurMalucelli/relay/releases/download/v1.0.0-preview.20260928/Relay-1.0.0-09bf98c9fa03-arm64.dmg)** continua disponível com o mesmo aplicativo: abra, arraste **Relay.app** para **Applications / Aplicativos** e ejete a imagem depois de instalar.
 
 ### Aviso de segurança do macOS
 
@@ -63,7 +80,7 @@ Cada mensagem usa sua conta e está sujeita aos limites do provedor. O teste nã
 
 ## Atualizar depois
 
-Aguarde as execuções terminarem, feche o Relay, baixe o novo `.dmg` de [Releases](https://github.com/ArthurMalucelli/relay/releases) e substitua o app em **Aplicativos**. Os dados são guardados separadamente em `~/Library/Application Support/Relay`; não apague essa pasta ao atualizar. Não há atualizador automático nesta prévia.
+Aguarde as execuções terminarem, feche o Relay, baixe o novo ZIP de [Releases](https://github.com/ArthurMalucelli/relay/releases), descompacte e substitua o app em **Aplicativos**. Os dados são guardados separadamente em `~/Library/Application Support/Relay`; não apague essa pasta ao atualizar. Não há atualizador automático nesta prévia.
 
 ## Reportar o teste
 
