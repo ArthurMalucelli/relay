@@ -4,8 +4,6 @@
 
 **[Baixar para Mac com Apple Silicon](https://github.com/ArthurMalucelli/relay/releases/download/v1.0.0-preview.20260928/Relay-1.0.0-09bf98c9fa03-arm64.dmg)** · [Guia de instalação](INSTALL.md) · [Versões](https://github.com/ArthurMalucelli/relay/releases) · [Reportar problema](https://github.com/ArthurMalucelli/relay/issues/new)
 
-> **Versão de teste.** Este pacote ainda não tem assinatura Developer ID nem notarização Apple: o macOS pode impedir a abertura. A instalação em outro Mac e a condição de distribuição da integração Claude ainda precisam de validação. Leia os [limites desta versão](#limites-desta-versão) antes de baixar.
-
 ## Antes de instalar
 
 | Você precisa de | Detalhe |
