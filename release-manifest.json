@@ -1,0 +1,53 @@
+{
+  "product": "Relay",
+  "channel": "preview",
+  "version": "1.0.0",
+  "commit": "09bf98c9fa03",
+  "dirty": false,
+  "builtAt": "2026-09-28T18:43:24.083Z",
+  "dmg": "Relay-1.0.0-09bf98c9fa03-arm64.dmg",
+  "dmgSha256": "e95d7d7a8262a6ecbcf11e7cd379c1a0f69a55390aaf2bb98995cc9903263a90",
+  "dmgBytes": 400815369,
+  "platform": "darwin-arm64",
+  "minimumMacOSDeclared": "13.0",
+  "signing": "ad-hoc",
+  "notarized": false,
+  "distributable": false,
+  "integrity": {
+    "bundle": true,
+    "appInDmg": true
+  },
+  "gatekeeperOnBuildMac": {
+    "bundle": "rejected",
+    "appInDmg": "rejected",
+    "dmgOpen": "rejected"
+  },
+  "validation": {
+    "automatedTests": 612,
+    "cleanProfileChecksOnBuildMac": 22,
+    "independentMacAndAccount": false,
+    "externalMcpOAuth": false
+  },
+  "claudeDistributionApproval": "not confirmed",
+  "runtimes": {
+    "codex": {
+      "version": "0.153.4",
+      "source": "npm:@openai/codex@0.153.4-darwin-arm64",
+      "sha256": "b973d440acac501fd2594a43e7ca9ce41e0a65b9dfb28d0d7a7837c99e1261e3",
+      "license": "Apache-2.0",
+      "licenseFiles": [
+        "LICENSE",
+        "NOTICE"
+      ]
+    },
+    "claude": {
+      "version": "2.1.281",
+      "source": "npm:@anthropic-ai/claude-agent-sdk-darwin-arm64@0.3.281",
+      "sha256": "a922981f6f3b55a251ef9f9dbaa0621a5f99cbcb5ca67f8a797476ccfc83f626",
+      "license": "Anthropic Commercial Terms (see LICENSE.md / code.claude.com/docs/en/legal-and-compliance)",
+      "licenseFiles": [
+        "LICENSE.md"
+      ]
+    }
+  }
+}
